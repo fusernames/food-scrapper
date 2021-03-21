@@ -2,5 +2,24 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5"
-  }
+  },
+  "name": "food-api",
+  "description": "This litte script is built to get some info about 1 restaurant on differents websites",
+  "version": "1.0.0",
+  "main": "scrapper.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node scrapper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusernames/food-api.git"
+  },
+  "author": "shellstrom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fusernames/food-api/issues"
+  },
+  "homepage": "https://github.com/fusernames/food-api#readme"
 }

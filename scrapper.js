@@ -1,19 +1,16 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-
-const config = {
-  headers: {
-    'Accept-Charset': 'utf-8',
-    'Accept-Language': 'en-US,en;q=0.8,en-GB;q=0.8,*;q=0.7',
-    'User-Agent': 'Mozilla/5.0',
-  },
-}
+const config = require('./axiosConfig')
 
 const main = async () => {
   let args = process.argv.slice(2)
-  const query = args[0] || 'como kitchen'
-  console.log('args =>', args)
-  console.log(`0. recherche pour ===> "${query}"`)
+  const query = args[0] || null
+  if (!query) {
+    console.log('please enter an argument')
+    return
+  }
+  // console.log('args =>', args)
+  console.log(`search for ===> "${query}"...`)
 
   const [deliveroo, ubereats, tripadvisor] = await Promise.all([
     scrapDeliveroo(query),
