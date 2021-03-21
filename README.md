@@ -1,6 +1,6 @@
 # Food Scrapper
 
-This litte script is built to get some info about 1 restaurant on differents websites
+This litte script is built to get some info about 1 restaurant on different websites (tripadvisor, ubereats, deliveroo)
 
 ## Get started
 
@@ -11,9 +11,9 @@ node scrapper "restaurant search query"
 
 ## Example
 
-```js
+```
 ➜  food-api git:(master) ✗ node scrapper "como kitchen riviere"
-search for ===> "como kitchen riviere"...
+searching for ===> "como kitchen riviere"...
 1. deliveroo {
     "title": "Como kitchen - Rivière",
     "rating": "4.8",

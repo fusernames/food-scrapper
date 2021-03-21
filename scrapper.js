@@ -10,7 +10,7 @@ const main = async () => {
     return
   }
   // console.log('args =>', args)
-  console.log(`search for ===> "${query}"...`)
+  console.log(`searching for ===> "${query}"...`)
 
   const [deliveroo, ubereats, tripadvisor] = await Promise.all([
     scrapDeliveroo(query),
