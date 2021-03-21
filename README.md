@@ -1,6 +1,6 @@
 # Food Scrapper
 
-This litte script is built to get some info about 1 restaurant on different websites (tripadvisor, ubereats, deliveroo)
+This litte script is built to get some infos about 1 restaurant on different websites (tripadvisor, ubereats, deliveroo)
 
 ## Get started
 
